@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./JS/loginwithmail.js"></script>
+</head>
+<style>
+* {box-sizing: border-box;}
+body { 
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  overflow: hidden;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.header a:hover {
+  color: black;
+}
+.header a.active {
+  color: black;
+}
+.header-right {
+  float: right;
+  padding: 30px;
+}
+.concept{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.tool{
+    padding-top:12px;
+}
+.tool2{
+    padding-top:12px;
+    font-size:20px
+}
+.tool1{
+     padding-top:22px
+}
+
+.login{
+    background:white;
+    border:0px solid white
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 4%;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    border-top-left-radius: 25px;
+  }
+  .login1{
+    color:#F2994A;
+    /* padding-left:0.5%; */
+}
+.account{
+    display:flex;
+    flex-direction:row;
+}
+.logo{
+    padding-top:3%
+}
+.google{
+    padding-left:1%
+}
+.input{
+    width:80%;
+    border-radius: 2px;
+}
+.inputbox{
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+.checkbox-example{
+    padding-top:1%;
+}
+.name{
+    margin:2rem
+}
+.continue{
+    width:30%;
+    margin-top:3%
+}
+
+@media screen and (max-width: 700px) {
+    body { 
+      margin: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+  .concept{
+    display:flex;
+    flex-direction:column;
+  }
+  .content{
+      width:100%;
+  }
+  .tool{
+    padding-top:12px;
+    font-size:15px
+}
+.tool2{
+    padding-top:12px;
+    font-size:15px
+}
+}
+</style>
+
+<body>
+
+<div class="header">
+  <img  src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute;">
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Course </a>
+    <a href="#about">User Management</a>
+    <a href="#about">Contact </a>
+    <button class="login" onclick="openNav()"><img class="btn" src="./assests/Login Button.svg" alt="Login Button"></button>
+  
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" style="float: right;" vclass="closebtn" onclick="closeNav()">&times;</a>
+      <div class="name">
+        <h2><b>Join Mentor</b></h2>
+        <div class="row">
+        <div class="ml-2 mr-2">or </div>
+        <div class="login1">login to your account</div>
+        </div>
+        <div class="logo">
+        <img class="facebook"src="./assests/Facebook.svg" alt="Facebook">
+        <img class="google"src="./assests/google-icon.svg" alt="google-icon">
+        </div>
+        <div>Or use E-mail/Mobile number for registration</div>
+        <div class="inputbox"><input class="input" type="text" placeholder="Name"/></div>
+        <div class="inputbox"><input  class="input" type="text" placeholder="Mobile number"/></div>
+        <div class="inputbox"><input  class="input" type="text" placeholder="Create a passowrd"/></div>
+        <div class="checkbox-example">
+            <input type="checkbox" value="1" id="checkboxOneInput"/>
+            <label for="checkboxOneInput">Remember password</label>
+        </div>
+        <div><img class="continue" src="./assests/Group 168.svg" alt="google-icon"></div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="concept">
+    <div>
+       <h2 class="tool"><b>Learning Today,</br>Leading Tomorrow</b></h2>
+        <p class="tool2">Tools,tutorials,design and innovation experts,all one place!</br>
+        The most intultive way to imagine your next user experience.</br>
+        Tools,tutorial,design and innovation</p>
+        <img class="tool1"src="./assests/Button.svg" alt="Italian Trulli">
+    </div>
+    <div >
+       <img class="content" src="./assests/image.svg" alt="Italian Trulli">
+    </div>
+<div>
+</body>
+</html>
