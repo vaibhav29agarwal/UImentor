@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+a {
+    color: black;
+    font-size:2rem;
+    text-decoration: none;
+    font-size:18px
+}
+.navbar-nav>li>a {
+    color:#474747;   
+}
+.use1{
+    margin-left:4%
+}
+.home{
+  margin-left:7%;
+  margin-top:2%
+}
+.control{
+   margin-left:5%;
+   display:flex;
+   flex-direction:row
+}
+.left{
+  width:60%;
+  height:55rem;
+}
+.right{
+  width:30%;
+  height:55rem;
+  margin-left:6%;
+}
+.about{
+    display:flex;
+    flex-direction:row;
+    padding:2%
+}
+.horizontal{
+    width:10rem;
+    height:0.2rem;
+    background-color:#9A9A9A;
+    margin-top:1em
+}
+.rating{
+    margin-left:1%
+}
+.look{
+    margin-top:1%
+}
+.background{
+  width:100%;
+  height:20rem;
+  background:#FBFBFB;
+  margin-top:2%
+}
+.card{
+  font-size:16px;
+  font-weight:bold;
+  margin-top:2%
+}
+.price{
+    width:66%;
+    height:25rem;
+    font-size:18px;
+    padding-top: 5%;
+}
+.actual{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    margin-top:2%
+}
+.actualTotal{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    color:#FF9500;
+    font-size:25px
+}
+
+.coupon{
+  border:1px solid orange;
+  width:100%;
+  height:3.5rem;
+  border-radius: 10px 0px 0px 10px;
+}
+.inputbutton{
+  display:flex;
+  flex-direction:row;
+  border-radius:5px;
+  margin-top:4%
+}
+.apply{
+  border:0px solid orange;
+  background:#FF9500;
+  color:white;
+  height:3.5rem;
+  width:140%;
+   border-radius: 0px 10px 10px 0px;
+}
+.radio{
+  margin-left:8%;
+  margin-top:7%
+}
+.checkout{
+  margin-left: -10%;
+}
+.check{
+  width:100%;
+  height:8rem
+}
+.discount{
+  font-size:12px
+}
+.logo{
+    background:#FBFBFB;
+    height:20rem;
+    display:flex;
+    flex-direction:row;
+    padding:2%;
+    margin-top:2%
+}
+.sharma{
+    width:100%;
+    margin-left:2%
+}
+.Course{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:space-between;
+}
+.horizontal{
+    width:7rem;
+    height:0.3rem;
+    background-color:#9A9A9A;
+    margin-top:1em
+}
+.description{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:2%
+}
+.horizontal0{
+    width:2rem;
+    height:0.2rem;
+    background-color:#000;
+    margin-top:0.2rem
+}
+.horizontal1{
+    width:1rem;
+    height:0.2rem;
+    background-color:#000;
+    margin-top:0.2rem
+}
+.horizontal3{
+    width:20rem;
+    height:0.2rem;
+    background-color:#9A9A9A;
+    margin-top:2rem;
+    margin-bottom:2rem
+}
+.hori{
+    display:flex;
+    flex-direction:row
+}
+.about{
+    margin-top:1%
+}
+.number{
+    color:orange;
+    font-size:19px;
+    font-weight:bold
+}
+.request{
+    color:red;
+    font-size:15px
+}
+.des{
+    margin-left:5%
+}
+.set{
+  height:3.9rem
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+  color:#2E2E2E;
+  font-weight:bold
+}
+ul.breadcrumb li+li:before {
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #2E2E2E;
+  text-decoration: none;
+  font-size:13px
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+}
+.breadcrumb{
+  background:white;
+  margin-left:4.5%
+}
+</style>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img  src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute">
+       <div><img src="./assests/Group 152.svg" alt="Group 152"></div>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon"></span>Home  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Course  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Trainers  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Events  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Pricing </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Contact</a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Group 6.svg" alt="Group 6"></a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Login Button start.svg" alt="Login Button start"></a></li>
+    </ul>
+  </div>
+</nav>
+ <ul class="breadcrumb">
+    <li><a href="#">Course </a></li>
+    <li><a href="#">Math</a></li>
+    <li>Vedio Math </li>
+  </ul>
+ <!-- <div class="home">Course <img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Math<img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Vedio Math </div> -->
+<div>
+    <img class="use1" src="./assests/Group list.svg" alt="Group usecard">
+</div>
+
+<div class="control">
+    <div class="left">
+            <div class="card">2 Courses in Card</div>
+              <div class="logo">
+      <div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div>
+      <div class="sharma">
+         <div class="Course">
+           <div>Course 1-By Shubhangi Sharma <br/> Rating<img src="./assests/Group 20.svg" alt="Group 20"></div>
+           <div class="number">$200</div>
+         </div>
+         <div class="horizontal"></div>
+         <p class="about">About - It is a long established fact that a reader will be distracted by the readable content <br/>
+         of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.</p>
+         <div class="description">
+            <div class=hori>
+                <div>
+                    <div class="horizontal0"></div>
+                    <div class="horizontal0"></div>
+                    <div class="horizontal0"></div>
+                    <div class="horizontal1"></div>
+                </div>
+                <div class="des">Description</div>
+            </div>
+            <div class="request">Remove</div>
+         </div>
+      </div>
+    </div>
+
+    <div class="logo">
+      <div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div>
+      <div class="sharma">
+         <div class="Course">
+           <div>Course 1-By Shubhangi Sharma <br/> Rating<img src="./assests/Group 20.svg" alt="Group 20"></div>
+           <div class="number">$200</div>
+         </div>
+         <div class="horizontal"></div>
+         <p class="about">About - It is a long established fact that a reader will be distracted by the readable content <br/>
+         of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.</p>
+         <div class="description">
+            <div class=hori>
+                <div>
+                    <div class="horizontal0"></div>
+                    <div class="horizontal0"></div>
+                    <div class="horizontal0"></div>
+                    <div class="horizontal1"></div>
+                </div>
+                <div class="des">Description</div>
+            </div>
+            <div class="request">Remove</div>
+         </div>
+      </div>
+    </div>
+</div>
+
+    <div class="right">
+      <div class="card">Price Summary</div>
+      <div class="price"> 
+        <div class="actual"> 
+           <div>Actual Price:</div>
+           <div>$625</div>
+        </div>
+         <div class="actual"> 
+           <div>Sale Discount:</div>
+           <div>$230</div>
+        </div>
+         <div class="actual"> 
+           <div>Coupon Discount:</div>
+           <div>$82</div>
+        </div>
+         <div class="actual"> 
+           <div>Coupon Discount:</div>
+           <div>$68</div>
+        </div>
+        <hr/>
+         <div class="actualTotal"> 
+           <div>Total:</div>
+           <div>$450</div>
+        </div>
+         <div class="inputbutton">
+            <div><input class="coupon" placeholder="Enter Coupon"/></div>
+            <div class="set"><button class="apply">apply</button></div>
+         </div>
+         <div class="radio">
+            <input type="radio" name="answer" checked="checked" value="no">
+            <label for="female">HEdcsks22</label><br>
+            <label for="female" class="discount">Get Rs 139 Instant Discount</label><br>
+            <input type="radio" name="answer" value="yes">
+            <label for="other">FEB2020</label><br>
+            <label for="female" class="discount">Use this coupon and get Rs. 113 Instant discount on your purchase.</label><br>
+            <input type="radio" name="answer" value="other">
+            <label for="other1">HEdcsks22</label>
+            <label for="female" class="discount">Get Rs 139 Instant Discount</label><br>
+          <div>
+    </div>
+    <div class="checkout"><img class="check" src="./assests/Group checkout.svg" alt="Group 138"></div>
+</div>
+
+</body>
+</html>

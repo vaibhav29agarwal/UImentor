@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function checkYesNo() {
+        if (document.getElementById('toggle').checked) {
+            document.getElementById('student').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student').style.color = '#C4C4C4';
+        }
+    }
+     function checkYesNo1() {
+        if (document.getElementById('toggle1').checked) {
+            document.getElementById('student1').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student1').style.color = '#C4C4C4';
+        }
+    }
+     function checkYesNo2() {
+        if (document.getElementById('toggle2').checked) {
+            document.getElementById('student2').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student2').style.color = '#C4C4C4';
+        }
+    }
+       function checkYesNo3() {
+        if (document.getElementById('toggle3').checked) {
+            document.getElementById('student3').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student3').style.color = '#C4C4C4';
+        }
+    }
+       function checkYesNo4() {
+        if (document.getElementById('toggle4').checked) {
+            document.getElementById('student4').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student4').style.color = '#C4C4C4';
+        }
+    }
+      function checkYesNo5() {
+        if (document.getElementById('toggle5').checked) {
+            document.getElementById('student5').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student5').style.color = '#C4C4C4';
+        }
+    }
+       function checkYesNo6() {
+        if (document.getElementById('toggle6').checked) {
+            document.getElementById('student6').style.color = '#5A5E63';
+            
+        }else {
+           document.getElementById('student6').style.color = '#C4C4C4';
+        }
+    }
+    </script>
+<style>
+
+
+
+
+
+a {
+    color: black;
+    font-size:2rem;
+    text-decoration: none;
+    font-size:18px
+}
+.navbar-nav>li>a {
+    color:#474747;   
+}
+.use{
+    margin-top:5%;
+    margin-left:7%
+}
+.use1{
+    margin-top:5%;
+}
+.arrow{
+    margin-left:7%
+}
+.course{
+    display:flex;
+    flex-direction:row;
+    margin-left:7%;
+    margin-top: 3%;
+}
+.reset{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between
+}
+.select{
+    width:100%;
+    height:3rem;
+    margin-top:7%;
+}
+.leftPannel{
+    width:20%
+}
+.rightPannel{
+    width:65%;
+    height:50rem;
+    margin-left:7%;
+}
+.financial{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:2%;
+}
+.report{
+    background:#FBFBFB;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.mentor{
+    width:30%;
+}
+.batch{
+    font-weight:bold;
+    font-size:12px;
+    margin:1rem
+}
+.rather{
+    font-size:12px;
+    color:grey;
+    margin:1rem
+}
+.syallabus{
+    font-weight:bold;
+    font-size:12px;
+    color:#858585
+}
+.lecture{
+    font-size:12px;
+    color:#5A5A5A
+}
+.amount{
+    color:#727272;
+    font-size:18px
+}
+.toggle1{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-weight:bold
+}
+.toggle{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between
+}
+.profile{
+    width:65%;
+    height:22rem;
+    margin-left:8%;
+    margin-top:5%
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 2rem;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+ 
+  bottom: -2.9px;
+  background-color: green;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #009688;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #009688;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media only screen and (max-width: 900px) {
+  
+}
+</style>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute">
+       <div><img src="./assests/Group 152.svg" alt="Group 152"></div>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon"></span>Home  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>About </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Course </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Trainers </a></li>
+      <li><a href="#"><span class="glyphicon"></span>User Management</a></li>
+      <li><a href="#"><span class="glyphicon"></span>My Course</a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Group 6.svg" alt="Group 6"></a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/add_24px.svg" alt="Group 6"></a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/person_24px.svg" alt="Group 6"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+    <img class="use" src="./assests/supervisor_account_24px_rounded.svg" alt="supervisor_account_24px_rounded">
+    <img class="use1" src="./assests/Group user.svg" alt="Group user"> 
+</div>
+<div class="profile">
+    <div class="toggle1">
+    <div>Student Name</div>
+        <div>E-mail</div>
+        <div>Contact Number</div>
+        <div>Status</div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student6">
+        <div><img id="use" src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div>
+            <label class="switch">
+            <input type="checkbox" checked id="toggle6" onclick="checkYesNo6()">
+            <span class="slider round" ></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student5">
+        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div><label class="switch">
+            <input type="checkbox" checked id="toggle5" onclick="checkYesNo5()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student4">
+        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div><label class="switch">
+            <input type="checkbox" checked id="toggle4" onclick="checkYesNo4()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student3">
+        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div><label class="switch">
+            <input type="checkbox" checked id="toggle3" onclick="checkYesNo3()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student2">
+        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div><label class="switch">
+            <input type="checkbox" checked  id="toggle2" onclick="checkYesNo2()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student1">
+        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div><label class="switch">
+            <input type="checkbox" checked id="toggle1" onclick="checkYesNo1()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle"  id="student">
+        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div >Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div><label class="switch">
+            <input type="checkbox" checked  id="toggle" onclick="checkYesNo()">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

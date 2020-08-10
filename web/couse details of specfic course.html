@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+a {
+    color: black;
+    font-size:2rem;
+    text-decoration: none;
+    font-size:18px
+}
+.navbar-nav>li>a {
+    color:#474747;   
+}
+.use{
+    margin-top:5%;
+    margin-left:7%
+}
+.use1{
+    margin-top:5%;
+}
+.arrow{
+    margin-left:7%
+}
+.course{
+    display:flex;
+    flex-direction:row;
+    margin-left:7%;
+    margin-top: 3%;
+}
+.reset{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between
+}
+.select{
+    width:100%;
+    height:3rem;
+    margin-top:7%;
+}
+.leftPannel{
+    width:20%
+}
+.rightPannel{
+    width:60%;
+    height:50rem;
+    margin-left:7%;
+    /* background:pink */
+}
+.financial{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:2%;
+}
+.report{
+    background:#FBFBFB;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.mentor{
+    width:30%;
+}
+.batch{
+    font-weight:bold;
+    font-size:12px;
+    margin:1rem
+}
+.rather{
+    font-size:12px;
+    color:grey;
+    margin:1rem
+}
+.syallabus{
+    font-weight:bold;
+    font-size:12px;
+    color:#858585
+}
+.lecture{
+    font-size:12px;
+    color:#5A5A5A
+}
+.amount{
+    color:#727272;
+    font-size:18px
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+  color:#2E2E2E;
+  font-weight:bold
+}
+ul.breadcrumb li+li:before {
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #2E2E2E;
+  text-decoration: none;
+  font-size:13px
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+}
+.breadcrumb{
+  background:white;
+}
+.Provid{
+  font-size:17px;
+  font-weight:bold
+}
+</style>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute">
+       <div><img src="./assests/Group 152.svg" alt="Group 152"></div>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon"></span>Home  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>About </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Course </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Trainers </a></li>
+      <li><a href="#"><span class="glyphicon"></span>User Management</a></li>
+      <li><a href="#"><span class="glyphicon"></span>My Course</a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Group 6.svg" alt="Group 6"></a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/add_24px.svg" alt="Group 6"></a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/person_24px.svg" alt="Group 6"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+    <img class="use" src="./assests/contacts_24px_rounded.svg" alt="contacts_24px_rounded">
+    <img class="use1" src="./assests/Group check.svg" alt="Group check"> 
+</div>
+<div class="arrow">
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Course Details</a></li>
+    <li>Course for 10th & 12th</li>
+  </ul>
+</div>
+
+
+<div class="course">
+    <div class="leftPannel">
+      <div class="Provid">Provided courses</div>
+      <div class="reset">
+        <div>Filter</div>
+        <div>Reset all</div>
+      </div>
+      <div>
+         <select class="select">
+            <option value="volvo">Select course</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+      </div>
+         <div>
+         <select class="select">
+            <option value="volvo">Select sub course</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+      </div>
+         <div>
+         <select class="select">
+            <option value="volvo">Select subject</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+      </div>
+        <div>
+         <select class="select">
+            <option value="volvo">Select Faculty</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="rightPannel">
+      <div>Couse for 10th & 12 Commerce</div>
+
+<!-- Carousel container -->
+<div id="my-pics" class="carousel slide" data-ride="carousel" style="margin:auto;">
+ <!-- Content -->
+ <div class="carousel-inner" role="listbox">
+ 
+ <!-- Slide 1 -->
+ <div class="item active">
+ <div class="financial">
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+ </div>
+ </div>
+ 
+ <!-- Slide 2 -->
+ <div class="item">
+ <div class="financial">
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+ </div>
+ </div>
+ 
+ <!-- Slide 3 -->
+ <div class="item">
+ <div class="financial">
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+    </div>
+ </div>
+ 
+ </div> 
+ </div>
+
+<div class="commerce">Course in CA(Foundation,Internmediate & Final)</div>
+<div id="my-pics" class="carousel slide" data-ride="carousel" style="margin:auto;">
+ <!-- Content -->
+ <div class="carousel-inner" role="listbox">
+ 
+ <!-- Slide 1 -->
+ <div class="item active">
+ <div class="financial">
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+ </div>
+
+ </div>
+ 
+ <!-- Slide 2 -->
+ <div class="item">
+ <div class="financial">
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+ </div>
+
+ </div>
+ 
+ <!-- Slide 3 -->
+ <div class="item">
+ <div class="financial">
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+    </div>
+ </div>
+ 
+ </div> 
+ </div>
+
+ <div class="commerce">Courses in Commerce </div>
+ <div id="my-pics" class="carousel slide" data-ride="carousel" style="margin:auto;">
+
+
+ 
+ <!-- Content -->
+ <div class="carousel-inner" role="listbox">
+ 
+ <!-- Slide 1 -->
+ <div class="item active">
+ <div class="financial">
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+ </div>
+
+ </div>
+ 
+ <!-- Slide 2 -->
+ <div class="item">
+ <div class="financial">
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+
+ <div class="mentor">
+ <div class="report">
+ <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+ <div>
+ <div class="batch">Financial Reporting Regular batch</div>
+ <div class="rather">CA Rohn rather</div>
+ </div>
+ </div>
+ <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+ <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+ <div>
+ <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+ </div>
+ <div class="amount">$200</div>
+ </div>
+ </div>
+
+ </div>
+ 
+ <!-- Slide 3 -->
+ <div class="item">
+ <div class="financial">
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+
+    <div class="mentor">
+    <div class="report">
+    <div><img class="picture" src="./assests/gPZwCbdS 1.svg" alt="gPZwCbdS 1"></div>
+    <div>
+    <div class="batch">Financial Reporting Regular batch</div>
+    <div class="rather">CA Rohn rather</div>
+    </div>
+    </div>
+    <div class="syallabus">New Syallabus - CA Final|Regular batch</div>
+    <div class="lecture">Lecture-110|Duration-330hrs|Hindi</div>
+    <div>
+    <div>3.5<img class="" src="./assests/Group 193.svg" alt="gPZwCbdS 1"></div>
+    </div>
+    <div class="amount">$200</div>
+    </div>
+    </div>
+ </div>
+ 
+ </div> 
+ </div>
+
+
+ <!-- <div class="commerce">Course in Commerce</div> -->
+ 
+ </div>
+ </div>
+ </div>
+
+</body>
+</html>

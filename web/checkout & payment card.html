@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("input[type='radio']").change(function(){
+if($(this).val()=="no"){
+    $("#otherAnswer").show();
+}
+else{
+   $("#otherAnswer").hide(); 
+}
+});
+});
+
+
+$(document).ready(function(){
+$("input[type='radio']").change(function(){
+if($(this).val()=="yes"){
+    $("#otherAnswer1").show();
+}
+else{
+   $("#otherAnswer1").hide(); 
+}
+});
+});
+
+$(document).ready(function(){
+$("input[type='radio']").change(function(){
+if($(this).val()=="other"){
+    $("#otherAnswer2").show();
+}
+else{
+   $("#otherAnswer2").hide(); 
+}
+});
+});
+</script>
+</head>
+<style>
+a {
+    color: black;
+    font-size:2rem;
+    text-decoration: none;
+    font-size:18px
+}
+.navbar-nav>li>a {
+    color:#474747;   
+}
+.use1{
+    margin-top:4%;
+    margin-left:4%
+}
+.payment{
+    margin-left:4%
+}
+.choose{
+    color:#5A5A5A;
+    font-weight:bold;
+    font-size:18px
+}
+.card{
+    width:90%;
+    height:25rem;
+    background:#FBFBFB;
+    margin-left:4%;
+    margin-top:3%;
+    padding:1%
+}
+.number{
+    width:90%;
+    margin-top:3% 
+}
+.date{
+    width:18%;
+    margin-top:6% 
+}
+.cardNumber{
+    display:flex;
+    justify-content:space-between;
+    width:90%
+}
+.cvv{
+    margin-top:10%
+}
+.common{
+    display:flex;
+    flex-direction:row;
+    width:95%;
+    margin-left:4%
+}
+.left{
+    width:60%;
+}
+.right{
+    width:40%;
+    margin-left:4%
+}
+.checkbox{
+    margin-top:4%;
+    margin-left:3%
+}
+.price{
+    width:50%;
+    height:25rem;
+    font-size:18px;
+}
+.actual{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    margin-top:2%
+}
+.actualTotal{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    color:#FF9500;
+    font-size:25px
+}
+.button{
+    margin:9%
+}
+.summary{
+    color:#5A5A5A;
+    font-weight:bold;
+    font-size:20px
+}
+.select{
+    width:30%;
+    height:15%
+}
+.phone{
+    margin-top:2%
+}
+@media only screen and (max-width: 900px) {
+.common{
+    display:flex;
+    flex-direction:column;
+    width:105%;
+}
+.left{
+    width:100%;
+}
+.right{
+    width:100%;
+}
+}
+</style>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img  src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute">
+          <div><img src="./assests/Group 152.svg" alt="Group 152"></div>
+
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon"></span>Home  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Course  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Trainers  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Events  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Pricing </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Contact</a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Group 6.svg" alt="Group 6"></a></li>
+      <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Login Button start.svg" alt="Login Button start"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+    <img class="use1" src="./assests/Group 7.svg" alt="Group 7">
+</div>
+
+<div class="common">
+    <div class="left">
+        <div class="payment">
+            <p class="choose">Choose Payment Method</p>
+
+
+            <input type="radio" name="answer" checked="checked" value="no"/> 
+             Add Debit/Credit/ATM Card<img  src="./assests/Group 138.svg" alt="Group 138">
+            <img  src="./assests/Group 139.svg" alt="Group 139">
+            <img  src="./assests/Group 140.svg" alt="Group 140">
+            <img  src="./assests/Download-Visa-Logo-PNG-Pic 1.svg" alt="Download-Visa-Logo-PNG-Pic 1">
+            <br><br>
+
+            <input type="radio" name="answer" value="yes"/>Net Banking 
+            <br><br>
+
+            <input type="radio" name="answer" value="other"/>Mobile Wallets
+            <br>
+
+            <br>        
+        </div>
+
+            <div class="card" type="text" name="otherAnswer" id="otherAnswer">
+                <input type="text" class="number" placeholder="Name on Card"></br>
+                <input type="text" class="number" placeholder="Card Number"></br>
+                <div class="cardNumber">
+                <div>
+                    <input type="text" class="date" placeholder="MM">
+                    <input type="text" class="date" placeholder="YY">
+                </div>
+                <div>
+                    <input type="text" class="cvv" placeholder="CVV">
+                </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" class="cvv" placeholder="CVV" checked>
+                    <label>Save this card for your convenience.</label>
+                </div>
+            </div>
+
+
+             <div class="card" style="display:none;" type="text" name="otherAnswer1" id="otherAnswer1">
+               <p>Select your bank from the drop-down list and click proceed to continue for the payment</p>
+                 <select class="select">
+                    <option value="volvo">Choose on Option</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+
+            <div class="card" style="display:none;" type="text" name="otherAnswer2" id="otherAnswer2">
+               <p>Please select the wallet which you want to use for the payment.</p>
+                 <select class="select">
+                    <option value="volvo">Choose on Option</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <p class="phone">Please type the registerd number and click Pay Now to continue for the payment.</p>
+                <input type="text" placeholder="Enter Phone Number"/>
+            </div>
+        
+    </div>
+    <div class="right">
+      <div class="summary">Price Summary</div>
+      <div class="price"> 
+        <div class="actual"> 
+           <div>Actual Price:</div>
+           <div>$625</div>
+        </div>
+         <div class="actual"> 
+           <div>Sale Discount:</div>
+           <div>$230</div>
+        </div>
+         <div class="actual"> 
+           <div>Coupon Discount:</div>
+           <div>$82</div>
+        </div>
+         <div class="actual"> 
+           <div>Coupon Discount:</div>
+           <div>$68</div>
+        </div>
+        <hr/>
+         <div class="actualTotal"> 
+           <div>Total:</div>
+           <div>$450</div>
+        </div>
+        <div class="button"><img  src="./assests/Group 19.svg" alt="Group 138"></div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
